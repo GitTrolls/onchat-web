@@ -12,18 +12,15 @@ const routes: Routes = [
     children: [
       {
         path: 'new',
-        component: NewComponent,
-        data: { animation: 1 }
+        component: NewComponent
       },
       {
         path: 'buddy',
-        component: BuddyComponent,
-        data: { animation: 2 }
+        component: BuddyComponent
       },
       {
         path: 'chatroom',
-        component: ChatroomComponent,
-        data: { animation: 3 }
+        component: ChatroomComponent
       },
       {
         path: '**',
