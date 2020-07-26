@@ -93,7 +93,7 @@ export class OnChatService {
 
   /**
    * 登录
-   * @param o 
+   * @param o
    */
   login(o: Login): Observable<Result<number>> {
     return this.http.post<Result<null>>(env.userLoginUrl, o, HTTP_OPTIONS_JSON);
@@ -116,7 +116,7 @@ export class OnChatService {
 
   /**
    * 注册
-   * @param o 
+   * @param o
    */
   register(o: Register): Observable<Result<number>> {
     return this.http.post<Result<null>>(env.userRegisterUrl, o, HTTP_OPTIONS_JSON);
@@ -124,10 +124,10 @@ export class OnChatService {
 
   /**
    * 通过用户ID获取用户
-   * @param $userId 用户ID
+   * @param userId 用户ID
    */
-  getUser($userId: number): Observable<Result<User>> {
-    return this.http.get<Result<User>>(env.userUrl + $userId);
+  getUser(userId: number): Observable<Result<User>> {
+    return this.http.get<Result<User>>(env.userUrl + userId);
   }
 
   /**
@@ -268,7 +268,7 @@ export class OnChatService {
 
 /**
  * 按照时间/置顶顺序排序聊天列表
- * @param chatList 
+ * @param chatList
  */
 export function sortChatList(chatList: ChatItem[]): ChatItem[] {
   chatList.sort((a: ChatItem, b: ChatItem) => b.updateTime - a.updateTime);
