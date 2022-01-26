@@ -42,8 +42,5 @@ OnChat mainly includes the following code repositories:
 
 If you like OnChat, please give a star to the above code repository ⭐.
 
-## Special thanks
-
-Thanks to [JetBrains](https://www.jetbrains.com/?from=onchat-web) for supporting us free open source licenses.
-
-![JetBrains Logo (Main) logo](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg)
+## Stats
+![Stats](https://repobeats.axiom.co/api/embed/5829c1eee99974fd3d4f87bd297b357225b923e5.svg)
